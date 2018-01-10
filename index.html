@@ -1,94 +1,514 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
 
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>skeys即将与您见面</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
+<html lang="ch" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Skeys Design - UI & UX 设计中心</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-<body>
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
-<!--header section -->
-<section class="banner" role="banner">
-  <div class="banner-area"> 
-    <!-- overlay -->
-    <div class="banner-area-gradient"></div>
-    <!-- overlay -->
-    <div class="inner-bg">
-      <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="banner-text text-center"> <a class="logo" href="#">SKeys工作室</a>
-            <h1>距离与大家见面还有</h1>
-            <!--Countdown -->
-            <div id="countdown"></div>
-            <!--Countdown --> 
-            <a href="#subscribes" class="btn">先睹为快</a>
-            </p>
-          </div>
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- THEME STYLES -->
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body>
+
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="index.html">
+
+                                <img class="logo-img logo-img-main" src="img/logo.png" alt="Skeys Logo">
+                                <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Skeys Logo">
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="index.html">创意中心</a></li>
+                                <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="pricing.html">Pricing</a></li> -->
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">关于我们</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">解决方案</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">业务洽谈</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+        <!--========== SLIDER ==========-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+            </div>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="img/1920x1080/banner-1.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h1 class="carousel-title">专注。执着。高效。</h1>
+                                <p class="carousel-subtitle">专注于用户体验与交互设计，执着于用户为中心的设计思想，高效完成设计方案。</p>
+                            </div>
+                            <a href="products.html" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">查看案例</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/banner-2.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h1 class="carousel-title">进取。创新。探索。</h1>
+                                <p class="carousel-subtitle">不断进取，不断创新，不断探索，让设计思维变为一种习惯。</p>
+                            </div>
+                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">关于设计思维</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--header section --> 
-<!--intro section -->
-<section id="intro" class="section intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="intro-content">
-          <h1>进取。创新。努力。</h1><h1>执着。探索。思考。</h1>
-        </div>
-        
-        <!-- intro --> 
-      </div>
-      <div class="col-md-7  col-md-offset-1 col-sm-6">
-        <div class="intro-content">
-          <h2>欢迎来到SKeys</h2>
-          <p>一群有梦想和激情的年轻人正在努力的工作着，只为让世界美好一点点。我们的网站正在建设中，不日将与大家见面。届时如果对我们有任何意见或兴趣，请及时联系我们，不要犹豫。</p>
-        </div>
-        
-        <!-- intro --> 
-      </div>
-    </div>
-  </div>
-</section>
-<!--intro section --> 
-<div class="copyrights">Designed by <a href="http://www.cssmoban.com/" >Skeys</a></div>
+        <!--========== SLIDER ==========-->
 
-<!-- Footer section -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col col-md-5">
-        <p>Copyright © 2017 Skeys Inc. All Rights Reserved.</p>
-        <p>Designed by Skeys</p>
-      
-    </div>
-  </div>
-  
-  <!-- footer top --> 
-  
-</footer>
-<!-- Footer section --> 
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- Service -->
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="content-lg container">
+                <div class="row row-space-1 margin-b-2">
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-mouse"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>网页设计解决方案</h3>
+                                    <p class="margin-b-5">为企业门户、品牌官网、产品介绍、专题网站等提供设计解决方案</p>
+                                </div>
+                                <!--<a href="#" class="content-wrapper-link"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon  icon-screen-smartphone"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>移动端设计解决方案</h3>
+                                    <p class="margin-b-5">为 iOS/Android 提供具有良好用户体验的设计解决方案。</p>
+                                </div>
+                                <!--<a href="#" class="content-wrapper-link"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-cup"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>用户体验优化</h3>
+                                    <p class="margin-b-5">从用户角度出发，对当前方案进行用户体验角度优化，使得产品更易用。</p>
+                                </div>
+                                <!--<a href="#" class="content-wrapper-link"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
 
-<!-- JS files--> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.backstretch.min.js"></script> 
-<script src="js/jquery.countdown.js"></script> 
-<script type="text/javascript" src="js/jquery.subscribe.js"></script> 
-<script src="js/main.js"></script>
-</body>
+                <div class="row row-space-1">
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-users"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>用户分析与研究</h3>
+                                    <p class="margin-b-5">针对产品需求特点，对用户群体进行调研，绘制用户画像，研究用户行为。</p>
+                                </div>
+                                <!--<a href="#" class="content-wrapper-link"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-speedometer"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>高效开发与实现</h3>
+                                    <p class="margin-b-5">对设计方案进行评审与评估，并高效转化为开发实现方案。</p>
+                                </div>
+                                <!--<a href="#" class="content-wrapper-link"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
+                            <div class="service" data-height="height">
+                                <div class="service-element">
+                                    <i class="service-icon icon-badge"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h3>品牌形象设计方案</h3>
+                                    <p class="margin-b-5">产品形象包装、形象设计，产品VIS视觉系统方案设计与解决方案。</p>
+                                </div>
+                                <!--<a href="#" class="content-wrapper-link"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Service -->
+
+        <!-- Latest Products -->
+        <div class="content-lg container">
+            <div class="row margin-b-40">
+                <div class="col-sm-6">
+                    <h2>解决方案展示</h2>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>-->
+                </div>
+            </div>
+            <!--// end row -->
+
+            <div class="row">
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img style="box-shadow: 2px 2px 12px rgba(0,0,0,.1)" class="img-responsive" src="img/solutions/01.jpg" alt="Latest Products Image">
+                        </div>
+                    </div>
+                    <h4><a href="#">虹娘科技品牌官网</a> <span class="text-uppercase margin-l-20">网页设计</span></h4>
+                    <p>虹娘科技是一家以虹膜识别为核心技术的科技网站，该项目从用户受众出发，为客户提供一整套成熟的官网品牌形象设计方案。</p>
+                    <a class="link">2017/10/01</a>
+                </div>
+                <!-- End Latest Products -->
+
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img style="box-shadow: 2px 2px 12px rgba(0,0,0,.1)" class="img-responsive" src="img/solutions/02.jpg" alt="Latest Products Image">
+                        </div>
+                    </div>
+                    <h4><a href="#">K.MEAL形象视觉设计</a> <span class="text-uppercase margin-l-20">品牌形象</span></h4>
+                    <p>K.MEAL【卡餐】是针对白领人群打造健康、营养、科学的快餐方案的餐饮管理公司，如今已先后入驻美团、百度、饿了么等等主流餐饮平台。</p>
+                    <a class="link">2017/03/24</a>
+                </div>
+                <!-- End Latest Products -->
+
+                <!-- Latest Products -->
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img style="box-shadow: 2px 2px 12px rgba(0,0,0,.1)" class="img-responsive" src="img/solutions/03.jpg" alt="Latest Products Image">
+                        </div>
+                    </div>
+                    <h4><a href="#">背文常移动端应用</a> <span class="text-uppercase margin-l-20">移动应用</span></h4>
+                    <p>首个针对艺考类的移动端应用，主要内容包括及时更题、名师出题、针对学习、全面覆盖等，现已上架App Store，用户量1W左右。</p>
+                    <a class="link">2016/12/25</a>
+                </div>
+                <!-- End Latest Products -->
+            </div>
+            <!--// end row -->
+        </div>
+        <!-- Clients -->
+        <div class="bg-color-sky-light">
+            <div class="content-lg container">
+                <!-- Swiper Clients -->
+                <div class="swiper-slider swiper-clients">
+                    <!-- Swiper Wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/1@2x.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/2@2x.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/3@2x.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/4@2x.png" alt="Clients Logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-clients-img" src="img/clients/5@2x.png" alt="Clients Logo">
+                        </div>
+                    </div>
+                    <!-- End Swiper Wrapper -->
+                </div>
+                <!-- End Swiper Clients -->
+            </div>
+        </div>
+        <!-- End Clients -->
+
+        <!-- Testimonials -->
+        <div class="content-lg container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>客户评价</h2>
+
+                    <!-- Swiper Testimonials -->
+                    <div class="swiper-slider swiper-testimonials">
+                        <!-- Swiper Wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        Skeys创意中心专注于用户体验设计，不仅在项目期间积极主动提出设计方案，而且每次都是充满热情，沟通顺畅，一次很开心的交流与合作。
+                                    </div>
+                                    <div class="margin-b-20">
+                                        设计师的专业性让我赞赏不已，他们不知疲倦，对方案精益求精，就像对待自己的孩子一样。
+                                    </div>
+                                    <p><span class="fweight-700 color-link">林智睿</span>, HN-TECH</p>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        一个设计工作室对待项目的认真态度是我们市场部人员有目共睹的，合作期间我们一起交流研讨了很多次方案。对方案的意见都是一针见血，大大提高了工作的效率。
+                                    </div>
+                                    <div class="margin-b-20">
+                                        希望能再次与他们合作，我也会把他们推荐给朋友的。
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Alex Clarson</span>, Nokia China</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- End Swiper Wrapper -->
+
+                        <!-- Pagination -->
+                        <div class="swiper-testimonials-pagination"></div>
+                    </div>
+                    <!-- End Swiper Testimonials -->
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+        <!-- End Testimonials -->
+
+        <!--&lt;!&ndash; Pricing &ndash;&gt;-->
+        <!--<div class="bg-color-sky-light">-->
+            <!--<div class="content-lg container">-->
+                <!--<div class="row row-space-1">-->
+                    <!--<div class="col-sm-4 sm-margin-b-2">-->
+                        <!--&lt;!&ndash; Pricing &ndash;&gt;-->
+                        <!--<div class="pricing">-->
+                            <!--<div class="margin-b-30">-->
+                                <!--<i class="pricing-icon icon-chemistry"></i>-->
+                                <!--<h3>Starter Kit <span> - $</span> 49</h3>-->
+                                <!--<p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
+                            <!--</div>-->
+                            <!--<ul class="list-unstyled pricing-list margin-b-50">-->
+                                <!--<li class="pricing-list-item">Basic Features</li>-->
+                                <!--<li class="pricing-list-item">Up to 5 products</li>-->
+                                <!--<li class="pricing-list-item">50 Users Panels</li>-->
+                            <!--</ul>-->
+                            <!--<a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; End Pricing &ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4 sm-margin-b-2">-->
+                        <!--&lt;!&ndash; Pricing &ndash;&gt;-->
+                        <!--<div class="pricing pricing-active">-->
+                            <!--<div class="margin-b-30">-->
+                                <!--<i class="pricing-icon icon-badge"></i>-->
+                                <!--<h3>Professional <span> - $</span> 149</h3>-->
+                                <!--<p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
+                            <!--</div>-->
+                            <!--<ul class="list-unstyled pricing-list margin-b-50">-->
+                                <!--<li class="pricing-list-item">Basic Features</li>-->
+                                <!--<li class="pricing-list-item">Up to 100 products</li>-->
+                                <!--<li class="pricing-list-item">100 Users Panels</li>-->
+                            <!--</ul>-->
+                            <!--<a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; End Pricing &ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4">-->
+                        <!--&lt;!&ndash; Pricing &ndash;&gt;-->
+                        <!--<div class="pricing">-->
+                            <!--<div class="margin-b-30">-->
+                                <!--<i class="pricing-icon icon-shield"></i>-->
+                                <!--<h3>Advanced <span> - $</span> 249</h3>-->
+                                <!--<p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
+                            <!--</div>-->
+                            <!--<ul class="list-unstyled pricing-list margin-b-50">-->
+                                <!--<li class="pricing-list-item">Extended Features</li>-->
+                                <!--<li class="pricing-list-item">Unlimited products</li>-->
+                                <!--<li class="pricing-list-item">Unlimited Users Panels</li>-->
+                            <!--</ul>-->
+                            <!--<a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; End Pricing &ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;// end row &ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; End Pricing &ndash;&gt;-->
+
+        <!-- Promo Section
+        <div class="promo-section overflow-h">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="ver-center">
+                        <div class="ver-center-aligned">
+                            <div class="promo-section-col">
+                                <h2>Our Clients</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+                                <p>Ipsum dolor sit amet consectetur adipiscing elit sed tempor incididut ut sead laboret dolore magna aliqua enim minim veniam exercitation ipsum dolor sit amet consectetur adipiscing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-section-img-right">
+                <img class="img-responsive" src="img/970x970/01.jpg" alt="Content Image">
+            </div>
+        </div>
+         End Promo Section -->
+
+
+        <!--========== END PAGE LAYOUT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <!-- Links -->
+            <div class="footer-seperator">
+                <div class="content-lg container">
+                    <div class="row">
+                        <div class="col-sm-2 sm-margin-b-50">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">创意中心</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">关于我们</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">解决方案</a></li>
+                                <!--<li class="footer-list-item"><a class="footer-list-link" href="#">Pricing</a></li>-->
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">客户信息</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">公司历程</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">业务洽谈</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">团队介绍</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Facebook</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">微博</a></li>
+                                <!--<li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>-->
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-5 sm-margin-b-30">
+                            <h2 class="color-white">有问题需要咨询？在下方留言吧</h2>
+                            <input type="text" class="form-control footer-input margin-b-20" placeholder="姓名" required>
+                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
+                            <input type="text" class="form-control footer-input margin-b-20" placeholder="联系方式" required>
+                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="留言内容" required></textarea>
+                            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">提交</button>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+            <!-- End Links -->
+
+            <!-- Copyright -->
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="footer-logo" src="img/logo.png" alt="Skeys Logo">
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0"><a class="color-base fweight-700" href="#preview/asentus/">Skeys Design - 2017©All rights reserved.</p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Copyright -->
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top"><i class="service-icon icon-arrow-up"></i> </a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
 </html>
