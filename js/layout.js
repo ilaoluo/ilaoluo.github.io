@@ -3,7 +3,7 @@ var Layout = function () {
     
     // handle on page scroll
     var handleHeaderOnScroll = function() {
-        if ($(window).scrollTop() > 60) {
+        if ($(window).scrollTop() > 70) {
             $('body').addClass('page-on-scroll');
         } else {
             $('body').removeClass('page-on-scroll');

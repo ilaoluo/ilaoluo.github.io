@@ -1,3 +1,44 @@
+/*  index.html */
+.mailto{
+	margin-top: 30px;
+	font-weight: 800;
+	border-radius: 4px;
+	background: #287bc7 !important;
+}
+
+/* footer*/
+.footer-list-link{
+	font-size: 14px !important;
+	color:rgba(255,255,255,.8) !important;
+}
+.footer-list-link:hover{
+	color:#fff;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 4px; 
+	transition: all .3s linear .2s;
+	-webkit-transition: all .3s linear .2s;
+}
+.footer-img{
+	width:60%;
+	height: auto;
+	text-align: right;
+}
+@media screen and (max-width:768px){
+	.footer-img{
+		width:30%;
+		height: auto;
+	}
+}
+.footer-seperator > .content-lg{
+	padding-bottom: 50px !important;
+}
+
+.bg-color-sky-light{
+	background: linear-gradient(22.5deg, rgba(242, 242, 242, 0.03) 0%, rgba(242, 242, 242, 0.03) 16%,rgba(81, 81, 81, 0.03) 16%, rgba(81, 81, 81, 0.03) 26%,rgba(99, 99, 99, 0.03) 26%, rgba(99, 99, 99, 0.03) 73%,rgba(43, 43, 43, 0.03) 73%, rgba(43, 43, 43, 0.03) 84%,rgba(213, 213, 213, 0.03) 84%, rgba(213, 213, 213, 0.03) 85%,rgba(125, 125, 125, 0.03) 85%, rgba(125, 125, 125, 0.03) 100%),linear-gradient(22.5deg, rgba(25, 25, 25, 0.03) 0%, rgba(25, 25, 25, 0.03) 54%,rgba(144, 144, 144, 0.03) 54%, rgba(144, 144, 144, 0.03) 60%,rgba(204, 204, 204, 0.03) 60%, rgba(204, 204, 204, 0.03) 76%,rgba(37, 37, 37, 0.03) 76%, rgba(37, 37, 37, 0.03) 78%,rgba(115, 115, 115, 0.03) 78%, rgba(115, 115, 115, 0.03) 91%,rgba(63, 63, 63, 0.03) 91%, rgba(63, 63, 63, 0.03) 100%),linear-gradient(157.5deg, rgba(71, 71, 71, 0.03) 0%, rgba(71, 71, 71, 0.03) 6%,rgba(75, 75, 75, 0.03) 6%, rgba(75, 75, 75, 0.03) 15%,rgba(131, 131, 131, 0.03) 15%, rgba(131, 131, 131, 0.03) 18%,rgba(110, 110, 110, 0.03) 18%, rgba(110, 110, 110, 0.03) 37%,rgba(215, 215, 215, 0.03) 37%, rgba(215, 215, 215, 0.03) 62%,rgba(5, 5, 5, 0.03) 62%, rgba(5, 5, 5, 0.03) 100%),linear-gradient(90deg, #FFF,#FFF) !important;
+}
+
+
+/* about.html */
 .img-ava{
 	margin: 0 auto;
 }
@@ -21,6 +62,30 @@
 	justify-content:center;
 	}
 }
+
+/* faq.html */
+.sp{
+	border-bottom: 2px solid rgba(0,0,0,.05);
+	padding-bottom: 30px;
+}
+.line-1{
+	margin-top: 30px;
+	width:10%;
+	border-top:1px solid rgba(0,0,0,.2);
+	height: 1px;
+}
+
+
+
+
+
+
+
+
+.right{
+	text-align: right;
+}
 .center{
 	text-align: center;
 }
+

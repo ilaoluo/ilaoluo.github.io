@@ -455,7 +455,8 @@ fieldset[disabled] .btn-theme {
   	[Footer]
 ------------------------------------------------------------------*/
 .footer {
-  background: url(../img/1920x1080/03.jpg) no-repeat;
+  /* background: url(../img/1920x1080/03.jpg) no-repeat; */
+  background-color:#111;
   background-size: cover;
   background-position: center center;
 }
@@ -469,12 +470,12 @@ fieldset[disabled] .btn-theme {
 }
 
 .footer .footer-list-item {
-  color: #cbd3e1;
+  color: #fff;
   margin-bottom: 25px;
 }
 
 .footer .footer-list-link {
-  color: #cbd3e1;
+  color: #fff;
 }
 
 .footer .footer-list-link:hover {
@@ -675,7 +676,7 @@ fieldset[disabled] .btn-theme {
   left: 0;
   width: 9px;
   height: 2px;
-  background: #17bed2;
+  background: #fff;
   opacity: 0;
   content: " ";
   transition-duration: 400ms;
@@ -772,11 +773,19 @@ fieldset[disabled] .btn-theme {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: #fff;
+    background: rgba(255,255,255,.85);
+    backdrop-filter:saturate(180%) blur(20px);
     border-bottom-color: #f0f0f0;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  .page-on-scroll .header .active{
+    color:#2279ca !important;
+  }
+  .page-on-scroll .header .nav-item-hover:after{
+    background-color: #2279ca;
   }
   .page-on-scroll .header .logo-img-main {
     display: none;
